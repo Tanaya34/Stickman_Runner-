@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#gameContainer {
+    position: relative;
+    width: 1000px;
+    height: 300px;
+    border: 2px solid #000;
+    overflow: hidden;
+    background-color: #f9ee5c;
+}
+
+#pauseButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1; 
+}
+
+#stickman {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    width: 20px;
+    height: 60px;
+    background-color: #000;
+}
+
+#stickman::before {
+    content: '';
+    position: absolute;
+    bottom: 60px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.obstacle {
+    position: absolute;
+    bottom: 0;
+    right: 150px;
+    width: 20px;
+    background-color: rgb(36, 141, 52);
+}
+
+#scoreboard {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+}
+
+#highscore {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    font-size: 20px;
+}
+
+#gameOverMessage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: rgb(10, 127, 41);
+    display: none;
+}
+
+#startButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
